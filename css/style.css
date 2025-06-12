@@ -95,6 +95,10 @@ body {
   font-weight: 500;
 }
 
+.cart-icon {
+  margin-left: 0.25rem;
+}
+
 .hero {
   background-image: url('https://images.unsplash.com/photo-1518541041635-1be63e80c537?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
