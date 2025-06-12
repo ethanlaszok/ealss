@@ -20,12 +20,53 @@ body {
   text-align: center;
 }
 
+
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 1rem;
   margin: 0;
   padding: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: #000;
+  border: none;
+  color: #d4af37;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  min-width: 8rem;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
 }
 
 .nav-links a {
