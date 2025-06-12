@@ -9,21 +9,20 @@
 </head>
 <body>
     <header class="site-header">
-      <nav class="menu-left">
-        <div class="dropdown">
-          <button class="dropdown-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-          <ul class="dropdown-menu nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="logo">Luxury Boutique</h1>
-      <div class="cart-link">
+        <button id="openMenu" class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+                  <h1 class="logo">Luxury Boutique</h1>
+            <div class="cart-link">
         <a href="cart.html">Cart</a>
       </div>
   </header>
+<nav id="sideMenu" class="side-menu">
+  <button id="closeMenu" class="close-btn">&times;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
   <section class="hero">
     <div class="hero-content">
       <h2>Elevate Your Lifestyle</h2>
@@ -34,5 +33,6 @@
   <footer>
     <p>&copy; 2023 Luxury Boutique. All rights reserved.</p>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 </html>

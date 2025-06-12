@@ -9,18 +9,17 @@
 </head>
 <body>
   <header class="site-header">
+    <button id="openMenu" class="menu-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     <h1 class="logo">Luxury Boutique</h1>
-    <nav>
-      <div class="dropdown">
-        <button class="dropdown-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
-        <ul class="dropdown-menu nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-    </nav>
   </header>
+<nav id="sideMenu" class="side-menu">
+  <button id="closeMenu" class="close-btn">&times;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
   <main class="content product-grid">
     <article class="product-card">
       <img src="https://placehold.co/400x300" alt="Product 1" />
@@ -41,5 +40,6 @@
   <footer>
     <p>&copy; 2023 Luxury Boutique. All rights reserved.</p>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 </html>
